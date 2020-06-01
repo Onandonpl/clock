@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(187, 231, 185);
+}
+
+.clock-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 400px;
+    background-color: #7ac74f;
+    border-radius: 100%;
+
+}
+
+
+.leaf {
+    position: absolute;
+    top: -37%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: #2b580c;
+    border-radius: 100px 0;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(96, 126, 82);
+    border-radius: 100%;
+
+}
+
+.up,
+.bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 10px;
+    background-color: #e0c879;
+}
+
+.right,
+.left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 5px;
+    background-color: #e0c879;
+}
+
+.up {
+    top: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.hours {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    -webkit-transform-origin: bottom;
+    width: 5px;
+    height: 100px;
+    background-color: #d5d887;
+}
+
+.minutes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 180px;
+    margin: auto;
+    -webkit-transform-origin: bottom;
+    width: 5px;
+    height: 180px;
+    background-color: #e0c879;
+}
+
+.seconds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 180px;
+    margin: auto;
+    -webkit-transform-origin: bottom;
+    width: 2px;
+    height: 180px;
+    background-color: #e87461;
+}
+
+.digital-clock {
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital-clock span {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #2b580c;
+}
+
+
+@media (max-width: 600px) {
+    .clock-container {
+        height: 300px;
+        width: 300px;
+    }
+
+    .hours {
+        bottom: 80px;
+        height: 80px;
+    }
+
+    .minutes {
+        bottom: 120px;
+        height: 120px;
+    }
+
+    .seconds {
+        bottom: 120px;
+        height: 120px;
+    }
+
+
+}
